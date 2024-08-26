@@ -10,5 +10,5 @@ $$p(x)_{desired} = \frac{e^{-S[x]}}{Z_0}.$$
 By applying coupling layers to this prior distribution, we can take the distribution closer and closer to the desired output and test it using a loss function (because of probabilities, the natural choice is the Kullback-Leibler divergence, D_{KL}). Once the loss is minimised, the distribution can be plotted against desired, to see the correlation between the two. Beginning from a completely uncorrelated distribution, the exact probability can be approximated, leading to a distribution which can be simply sampled from instead of calculating the partition function, $Z_0$.
 
 $$
-\tilde{p}(z) = f^{-1}\left(\log r(z) + \log \det\left|\frac{\partial f}{\partial x}\right|\right) \approx p(x)
+\log \tilde{p}(z) = \left(\log r(z) + \log \det\left|\frac{\partial f}{\partial x}\right|\right) \approx \log p(x)
 $$
