@@ -11,4 +11,11 @@ By applying coupling layers to this prior distribution, we can take the distribu
 
 $$
 \log \tilde{p}(z) = \left(\log r(z) + \log \det\left|\frac{\partial f}{\partial x}\right|\right) \approx \log p(x)
-$$
+$$where it is common to take the logarithm of both sides, to simplify the computational side.
+
+### *Important info*
+Before running the code, ensure the first line is uncommented,
+\texttt{
+!pip install torch
+}
+if \texttt{torch} has never been implemented by the user before. 
