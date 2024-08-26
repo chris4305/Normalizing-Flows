@@ -10,7 +10,7 @@ _**The user will need the latest installation of Python (at least 3.7.9) to run 
 
 - For information about what each function does, after running all the cells enter `my_function.__doc__` (where `__` is a *double* underscore) into a new cell and hit ``Run`` and a description of ``my_function`` will be printed out. This can also be performed with the in-built `help(my_function)` Python function with a similar output.
 
-- If one wishes to determine information about a particular `class`, for instance - initialised variables `__init__()` then use either `my_Class.__init__().__doc__` or `help(my_Class.__init__())`, similar to above.
+- If one wishes to determine information about a particular `class`, for instance initialised variables `__init__()`, then use either `my_Class.__init__().__doc__` or `help(my_Class.__init__())`, similar to above.
 
 ### *Summary*
 Uses normalising flows to flow to desired probability distribution approximating physical theory. Can be used to determine correlation functions and sample from such distribution.
