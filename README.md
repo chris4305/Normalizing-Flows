@@ -10,13 +10,13 @@ _**The user will need the latest installation of Python (at least 3.7.9) to run 
 
 - For information about what each function does, after running all the cells enter `my_function.__doc__` (where `__` is a *double* underscore) into a new cell and hit ``Run`` and a description of ``my_function`` will be printed out. This can also be performed with the in-built `help(my_function)` Python function with a similar output.
 
-- If one wishes to determine information about a particular `Class`, for instance - initialised vaiables (`__init__()`) then use either `my_Class.__init__().__doc__` or `help(my_Class.__init__())`, similar to above.
+- If one wishes to determine information about a particular `class`, for instance - initialised variables `__init__()` then use either `my_Class.__init__().__doc__` or `help(my_Class.__init__())`, similar to above.
 
 ### *Summary*
 Uses normalising flows to flow to desired probability distribution approximating physical theory. Can be used to determine correlation functions and sample from such distribution.
 
 ### *Introduction*
-By generating a simple, multivariate, uniform distribution, this program uses a novel approach to determining information about physical theories - in this case, the 2D XY model. This is done by *flowing* this distribution towards the *desired* one given by the following distribution
+Adapting the numerical model developed by M. S. Albergo et al. in _Introduction to Normalizing Flows for Lattice Field Theory_[^1], this program implements a novel approach to determining probability distributions of the XY model which can be used to find the configuration of the system near the critical phase - avoiding _critical slowing down_. By generating a multivariate, uniform distribution $r(z) = unif[0, 2\pi]$, this is done by *flowing* this distribution towards a *desired* one given by the following distribution
 
 $$p(x)_{desired} = \frac{e^{-S[x]}}{Z_0}.$$
 
@@ -28,4 +28,4 @@ $$
 
 where it is common to take the logarithm of both sides, to simplify the computational side.
 
-
+[^1]: M. S. Albergo, D. Boyda, D. C. Hackett, G. Kanwar, K. Cranmer, S. Racanière, D. J. Rezende, and P. E. Shanahan, “_Introduction to normalizing flows for lattice field theory,_” 2021
