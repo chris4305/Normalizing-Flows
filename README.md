@@ -6,7 +6,7 @@ _To check which Python version you have, open command prompt (cmd in Windows) an
 
 `python --version` or `python -V`
 
-*IF YOU HAVE NEVER INSTALLED PYTORCH BEFORE*
+**IF YOU HAVE NEVER INSTALLED PYTORCH BEFORE:**
 - Before running the code, ensure the first cell (shown below) is uncommented (highlight the line of code, followed by `Ctrl + /`) if `torch` has never been implemented by the user before. 
 
 `!pip install torch`
