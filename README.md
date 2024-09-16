@@ -11,6 +11,7 @@ _To check which Python version you have, open command prompt (cmd in Windows) an
 
 `!pip install torch`
 
+**IF YOU HAVE PYTORCH INSTALLED, START HERE:**
 - The code should be run line by line (quick ways to do this include the drop-down menu `Cell`, then `Run All` or by perpetually hitting `Shift + Enter` when clicked into the cell), if any issues occur in the first instance the *kernel* should be restarted, using the `Kernel` drop-down menu, followed by `Restart & Run All`.
 
 - For information about what each function does, after running all the cells enter `my_function.__doc__` (where `__` is a *double* underscore) into a new cell and hit ``Run`` and a description of ``my_function`` will be printed out. This can also be performed with the in-built `help(my_function)` Python function with a similar output.
