@@ -1,6 +1,10 @@
 # Normalizing-Flows
 ### *Important info*
-_**The user will need the latest installation of Python (at least 3.7.9) to run this program**_
+_**The user will need at least Python 3.7.9 version to run this program.**_
+
+_To check which Python version you have, open command prompt (cmd in Windows) and enter the following:_
+
+`python --version` or `python -V`
   
 - Before running the code, ensure the first cell (shown below) is uncommented (highlight the line of code, followed by `Ctrl + /`) if `torch` has never been implemented by the user before. 
 
