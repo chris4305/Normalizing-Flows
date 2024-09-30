@@ -21,7 +21,7 @@ _To check which Python version you have, open command prompt (cmd in Windows) an
 ### *Summary*
 Uses normalising flows to flow a simple distribution towards a desired probability distribution approximating physical theory. Can further be used to determine correlation functions and sample from such distribution (correlation functions not calculated here).
 
-### *Introduction to Normalising FLows*
+### *Overview to Normalising FLows*
 Adapting the numerical model developed by M. S. Albergo et al. in _Introduction to Normalizing Flows for Lattice Field Theory_[^1], this program implements a novel approach to determining probability distributions of the XY model which can be used to find the configuration of the system near the critical phase - avoiding _critical slowing down_. By generating a multivariate, uniform distribution $r(z) = unif[0, 2\pi]$, this is done by *flowing* this distribution towards a *desired* one given by the following distribution
 
 $$p(x)_{desired} = \frac{e^{-S[x]}}{Z_0}.$$
